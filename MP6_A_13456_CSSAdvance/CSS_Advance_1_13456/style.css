@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #334155;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #d7e1ef;
+}
+
+h1 {
+    margin-top: 0;
+    color: #2457a7;
+    text-align: center;
+    font-size: 27px;
+}
+
+.deskripsi {
+    margin-bottom: 25px;
+    color: #64748b;
+    text-align: center;
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+}
+
+td:first-child {
+    width: 34%;
+}
+
+label,
+.label-utama {
+    color: #334155;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    color: #334155;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+input[type="file"] {
+    max-width: 100%;
+}
+
+.pilihan {
+    margin-top: 8px;
+    line-height: 2;
+}
+
+.pilihan label {
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.kelompok-favorit {
+    margin-bottom: 15px;
+}
+
+.kelompok-favorit p {
+    margin: 0;
+    color: #2457a7;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.baris-tombol td {
+    padding-top: 22px;
+    text-align: center;
+    border-bottom: none;
+}
+
+input[type="submit"] {
+    padding: 12px 35px;
+    border: none;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+.catatan {
+    margin-top: 20px;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media screen and (max-width: 560px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .container {
+        padding: 18px 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    table,
+    tbody,
+    tr,
+    td {
+        display: block;
+        width: auto;
+    }
+
+    td,
+    td:first-child {
+        padding: 8px 0;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select,
+    textarea {
+        width: 100%;
+    }
+}

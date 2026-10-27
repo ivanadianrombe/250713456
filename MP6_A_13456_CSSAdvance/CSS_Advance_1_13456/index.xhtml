@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Formulir Pendaftaran Mahasiswa</h1>
+
+        <p class="deskripsi">
+            Lengkapi informasi dengan benar untuk membantu proses pendataan mahasiswa.
+        </p>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="namamhs">Nama Lengkap</label>
+                        </td>
+                        <td>
+                            <input type="text" id="namamhs" name="namamhs" size="30" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="label-utama">Jenis Kelamin</span>
+                        </td>
+                        <td>
+                            <div class="pilihan">
+                                <input type="radio" id="laki" name="jk" value="Laki-laki" />
+                                <label for="laki">Laki-laki</label>
+
+                                <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+                                <label for="perempuan">Perempuan</label>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="prodi">Program Studi</label>
+                        </td>
+                        <td>
+                            <select id="prodi" name="prodi">
+                                <option value="Informatika">Informatika</option>
+                                <option value="Sistem Informasi">Sistem Informasi</option>
+                                <option value="Teknik Industri">Teknik Industri</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">Alamat Email</label>
+                        </td>
+                        <td>
+                            <input type="text" id="email" name="email" size="30" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="telepon">Nomor Telepon</label>
+                        </td>
+                        <td>
+                            <input type="text" id="telepon" name="telepon" size="30" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="password">Kata Sandi</label>
+                        </td>
+                        <td>
+                            <input type="password" id="password" name="password" size="30" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="photo">Foto Mahasiswa</label>
+                        </td>
+                        <td>
+                            <input type="file" id="photo" name="photo" accept="image/gif, image/jpeg, image/png" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="namasmu">Asal Sekolah</label>
+                        </td>
+                        <td>
+                            <input type="text" id="namasmu" name="namasmu" size="30" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="label-utama">Minat dan Favorit</span>
+                        </td>
+                        <td>
+                            <div class="kelompok-favorit">
+                                <p>Musik yang Disukai</p>
+
+                                <div class="pilihan">
+                                    <input type="checkbox" id="musik1" name="musik" value="Pop" />
+                                    <label for="musik1">Pop</label>
+
+                                    <input type="checkbox" id="musik2" name="musik" value="Rock" />
+                                    <label for="musik2">Rock</label>
+
+                                    <input type="checkbox" id="musik3" name="musik" value="Jazz" />
+                                    <label for="musik3">Jazz</label>
+                                </div>
+                            </div>
+
+                            <div class="kelompok-favorit">
+                                <p>Film Favorit</p>
+
+                                <div class="pilihan">
+                                    <input type="checkbox" id="film1" name="film" value="Drama" />
+                                    <label for="film1">Drama</label>
+
+                                    <input type="checkbox" id="film2" name="film" value="Action" />
+                                    <label for="film2">Action</label>
+
+                                    <input type="checkbox" id="film3" name="film" value="Sci-fi" />
+                                    <label for="film3">Sci-fi</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="resume">Tentang Diri Anda</label>
+                        </td>
+                        <td>
+                            <textarea id="resume" name="resume" rows="6" cols="23"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr class="baris-tombol">
+                        <td colspan="2">
+                            <input type="submit" name="simpan" value="Simpan Data" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+        <p class="catatan">
+            Pastikan seluruh informasi sudah benar sebelum menekan tombol Simpan Data.
+        </p>
+    </div>
+</body>
+</html>
